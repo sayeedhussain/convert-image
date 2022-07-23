@@ -1,3 +1,17 @@
 #!/usr/bin/env ruby
 
-puts "Convert Image"
+for file in ~/Downloads/*
+do
+	if [[ -f $file ]]
+	then
+		if [[ $file == *.heic ]] || [[ $file == *.HEIC ]]
+		then
+			filename=$(basename -- "$file")
+			filename_without_extension="${filename%.*}"
+			echo $filename
+			echo $filename_without_extension
+			sips -s format jpeg $file --out ~/Downloads/$filename_without_extension.jpeg
+			rm $file		
+  		fi
+  	fi
+done
