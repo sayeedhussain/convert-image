@@ -14,3 +14,5 @@ A simple utility to convert heic images to jpeg when you airdrop photos from iPh
 ```bash
   convert_heic_to_jpeg /PATH-TO-FOLDER
 ```
+
+sample.heic image provided for try out.
