@@ -1,8 +1,8 @@
 class ConvertImage < Formula
   desc "Convert image from heic to jpeg format"
   homepage ""
-  url "https://github.com/sayeedhussain/convert-image/archive/refs/tags/v0.0.4.tar.gz"
-  sha256 "24ff83fa4d824e775b32b4d56ea2257c7112d7970ca9fb0b9a0bee0bad5c20c2"
+  url "https://github.com/sayeedhussain/convert-image/archive/refs/tags/v0.0.5.tar.gz"
+  sha256 "50a51d69efd4a8ca876cc128b1ffbe37b92b1a1d62cd4ef7c8aec45622ba0af0"
   license "GPL-3.0"
  
   def install
