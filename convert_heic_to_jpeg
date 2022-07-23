@@ -1,17 +1,35 @@
 #!/usr/bin/env bash
 
-for file in ~/Downloads/*
+
+if [ $# -eq 0 ]
+  then
+    echo "Error: Folder path with heic images is required (example: convert_heic_to_jpeg ~/Downloads)"
+fi
+
+
+if [ ! -d $1 ] 
+then
+    echo "Error: Directory $1 does not exist"
+    exit 1
+fi
+
+converted_files_count=0
+
+for file in $1/*
 do
 	if [[ -f $file ]]
 	then
 		if [[ $file == *.heic ]] || [[ $file == *.HEIC ]]
 		then
+			converted_files_count=$((converted_files_count+1))
 			filename=$(basename -- "$file")
 			filename_without_extension="${filename%.*}"
-			echo $filename
-			echo $filename_without_extension
-			sips -s format jpeg $file --out ~/Downloads/$filename_without_extension.jpeg
+			sips -s format jpeg $file --out $1/$filename_without_extension.jpeg >/dev/null
 			rm $file		
   		fi
   	fi
 done
+
+echo "[$converted_files_count] images converted"
+
+exit 0
