@@ -4,6 +4,7 @@
 if [ $# -eq 0 ]
   then
     echo "Error: Folder path with heic images is required (example: convert_heic_to_jpeg ~/Downloads)"
+    exit 1
 fi
 
 
