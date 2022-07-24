@@ -1,6 +1,6 @@
 # About
 
-A simple utility to convert heic images to jpeg when you airdrop photos from iPhone to your Mac
+A utility to securely convert heic images to jpeg on your computer locally without uploading to any website. Especially useful when you airdrop photos from your iPhone to your Mac and get those annoying heic images.
 
 # Installation
 
