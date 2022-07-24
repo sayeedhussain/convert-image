@@ -1,6 +1,6 @@
 # About
 
-A utility to securely convert heic images to jpeg on your computer locally without uploading to any website. Especially useful when you airdrop photos from your iPhone to your Mac and get those annoying heic images.
+A command-line utility to securely convert heic images to jpeg on your computer locally without uploading to any website. Especially useful when you airdrop photos from your iPhone to your Mac and get those annoying heic images.
 
 # Installation
 
